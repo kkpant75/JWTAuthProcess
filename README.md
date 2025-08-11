@@ -1,10 +1,3 @@
-Perfect — here’s a clean and concise `README.md` without code, just the **high-level overview**, **how it works**, **how to run it (with Docker)**, and the **flow of the application**.
-
----
-
-### 📄 `README.md`
-
-````markdown
 # 🔐 Spring Boot JWT Authentication API (Dockerized)
 
 A minimal Spring Boot REST API demonstrating stateless authentication using JSON Web Tokens (JWT), built and deployed with Docker.
@@ -26,25 +19,17 @@ A minimal Spring Boot REST API demonstrating stateless authentication using JSON
    - JWT is validated on every request using a custom security filter.
    - If the token is valid, the request is authenticated.
 
----
-
-## 🚀 How to Run with Docker
-
-1. **Build the project JAR (if not already built)**:
-   ```
-  docker compose up -d 
-  or 
-  docker compose up --build
-
-````
-
-
-   ```
 
 4. **API available at**:
    `http://localhost:8080`
 
 ---
+## 🚀 How to Run with Docker
+   ```
+  docker compose up -d 
+  or 
+  docker compose up --build
+```
 
 ## 🎯 How to Operate
 
@@ -96,15 +81,8 @@ A minimal Spring Boot REST API demonstrating stateless authentication using JSON
 
 To stop and remove the container:
 
-```bash
-docker ps        # find container ID
-docker stop <id>
 ```
-
-To remove the Docker image:
-
-```bash
-docker rmi springboot-jwt-app
+docker compose down
 ```
 
 ---
@@ -113,9 +91,4 @@ docker rmi springboot-jwt-app
 
 MIT – Free to use for learning and experimentation.
 
-```
-
----
-
-Let me know if you'd like this saved as a downloadable file or if you want to add Docker Compose support or environment variables (like secret keys) to the setup.
 ```
